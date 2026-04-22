@@ -103,10 +103,10 @@ while True:
         fetch =input ( "\n do you want to fetch news from save folder (yes /no) : ").strip().lower()
         
         if fetch =="yes":
-            n=int(input ('\n give negetive integer in assending order for previous headline : '))
+            n=int(input ('\n WHICH PREVIOUS HEADLINE YOU WANT GIVE A NUMBER  : '))
             with open("file.text",'r')as f:
                  lines =f.readlines()
-                 print ('\n'+lines[n])
+                 print ('\n'+lines[-n])
                  
     users_choice =input('\n do you want to generate another headline? (yes/no) : ').strip().lower()
     
